@@ -3,8 +3,11 @@ package ru.netology.domain;
 public class CommentsInfo {
     private int totalComments;
     private String userIdComment;
-    private boolean canComment;
+    private int canComment;
+    private int groupsCanPost;
     private String textComment;
+    private boolean canClose;
+    private boolean canOpen;
 
     public int getTotalComments() {
         return totalComments;
@@ -22,12 +25,20 @@ public class CommentsInfo {
         this.userIdComment = userIdComment;
     }
 
-    public boolean isCanComment() {
+    public int getCanComment() {
         return canComment;
     }
 
-    public void setCanComment(boolean canComment) {
+    public void setCanComment(int canComment) {
         this.canComment = canComment;
+    }
+
+    public int getGroupsCanPost() {
+        return groupsCanPost;
+    }
+
+    public void setGroupsCanPost(int groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
     }
 
     public String getTextComment() {
@@ -36,5 +47,21 @@ public class CommentsInfo {
 
     public void setTextComment(String textComment) {
         this.textComment = textComment;
+    }
+
+    public boolean isCanClose() {
+        return canClose;
+    }
+
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
+    }
+
+    public boolean isCanOpen() {
+        return canOpen;
+    }
+
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
     }
 }
