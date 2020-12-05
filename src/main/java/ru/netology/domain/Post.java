@@ -10,7 +10,6 @@ public class Post {
     private int replyOwnerId;
     private int replyPostId;
     private int friendsOnly;
-    private AttachmentsInfo attachmentsInfo;
     private Geo geo;
     private int signerId;
     private LikesInfo likesInfo;
@@ -101,14 +100,6 @@ public class Post {
 
     public void setFriendsOnly(int friendsOnly) {
         this.friendsOnly = friendsOnly;
-    }
-
-    public AttachmentsInfo getAttachmentsInfo() {
-        return attachmentsInfo;
-    }
-
-    public void setAttachmentsInfo(AttachmentsInfo attachmentsInfo) {
-        this.attachmentsInfo = attachmentsInfo;
     }
 
     public Geo getGeo() {
